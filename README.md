@@ -1,48 +1,23 @@
-# Project-5: Dynamic Calorie Calculator and Inventory Management System
+# Calorie Scan
 
-## Overview
-This project involves building a web application that scans QR codes representing food dishes, calculates their calorie counts based on constituent items, and allows dynamic adjustments to the quantities of these items. The backend manages inventory and provides CRUD APIs for managing dishes and their calorie data.
-
----
-
-## Key Features
-
-### Frontend
-1. **QR Code Scanning:**
-   - Read QR codes containing dish and item data.
-   - Display parsed dish information with item breakdown.
-
-2. **Dynamic Calorie Calculation:**
-   - Retrieve calorie data from the backend for each constituent item.
-   - Calculate and display the total calorie count.
-   - Allow users to modify item quantities and see updated calorie totals in real-time.
-
-3. **User-Friendly Interface:**
-   - Intuitive UI to display and interact with dish details and calorie calculations.
-
-### Backend
-1. **Inventory Management APIs:**
-   - Manage dishes and their constituent items with CRUD operations.
-   - Handle calorie data updates dynamically.
-
-2. **Database Management:**
-   - Store and retrieve data for dishes and items using MongoDB.
+## Introduction
+A full-stack web app that lets users scan food dish QR codes, view nutritional details, and calculate total calories in real time.  
+Built with **HTML, CSS, JavaScript, Node.js, Express, and MongoDB** — this project combines frontend interactivity with backend CRUD APIs for managing dishes and calorie data.
 
 ---
 
-## Tech Stack
+## Deployed App
+- [Live Link](#) *https://caloriescanner.netlify.app/*
 
-### Frontend
-- **HTML, CSS, JavaScript**
-- **QR Code Library:** [qr-scanner](https://github.com/nimiq/qr-scanner)
+## Features
 
-### Backend
-- **Node.js** with **Express.js**
+- **QR Code Scanning:** Reads QR codes containing dish and item data.  
+- **Dynamic Calorie Calculation:** Fetches calorie data from the backend and updates totals instantly as users change quantities.  
+- **Interactive UI:** Simple and intuitive interface to explore dish items and calorie breakdown.
 
-### Database
-- **MongoDB**
 
 ---
+
 
 ## Setup Instructions
 
@@ -55,7 +30,7 @@ This project involves building a web application that scans QR codes representin
 1. **Clone the Repository:**
    ```bash
    git clone <repository-url>
-   cd project-5
+   cd calorie-calculator
    ```
 
 2. **Install Backend Dependencies:**
@@ -63,10 +38,6 @@ This project involves building a web application that scans QR codes representin
    cd backend
    npm install
    ```
-
-3. **Set Up MongoDB:**
-   - Use the provided MongoDB URI or set up your local MongoDB instance.
-   - Update the database connection string in `backend/config/db.js`.
 
 4. **Run the Backend Server:**
    ```bash
@@ -79,57 +50,22 @@ This project involves building a web application that scans QR codes representin
 
 ---
 
-## API Endpoints
 
-### CRUD Operations for Dishes
-1. **Add a Dish:**
-   - **Method:** POST
-   - **Endpoint:** `/api/dishes`
-   - **Body:**
-     ```json
-     {
-       "dishName": "Idli Vada Combo",
-       "items": [
-         { "name": "Idli", "quantity": 2, "calories": 100 },
-         { "name": "Vada", "quantity": 1, "calories": 200 }
-       ]
-     }
-     ```
+## Screenshots
+<img width="1515" height="782" alt="Screenshot 2025-11-07 222835" src="https://github.com/user-attachments/assets/b3ddfaf4-e29f-4311-85a2-ea907ead764e" />
 
-2. **Update a Dish:**
-   - **Method:** PUT
-   - **Endpoint:** `/api/dishes/:id`
 
-3. **Delete a Dish:**
-   - **Method:** DELETE
-   - **Endpoint:** `/api/dishes/:id`
-
-4. **Get All Dishes:**
-   - **Method:** GET
-   - **Endpoint:** `/api/dishes`
+<img width="856" height="790" alt="Screenshot 2025-11-07 222640" src="https://github.com/user-attachments/assets/bc6240aa-dc19-465d-8b13-c2822342b2ce" />
 
 ---
 
-## Example QR Data
-```json
-{
-  "dishName": "Idli Vada Combo",
-  "items": [
-    { "name": "Idli", "quantity": 2 },
-    { "name": "Vada", "quantity": 1 },
-    { "name": "Sambhar", "quantity": 1 },
-    { "name": "Chutney", "quantity": 1 }
-  ]
-}
-```
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|-----------|---------------|
+| Frontend | HTML, CSS, JavaScript |
+| QR Library | [qr-scanner](https://github.com/nimiq/qr-scanner) |
+| Backend | Node.js, Express.js |
+| Database | MongoDB |
 
 ---
-
-## Deployed Application
-- [Live Demo Link](#) *https://caloriescanner.netlify.app/*
-
----
-
-## Group Presentation Video
-- [Google Drive Video Link](#) *(Add your video link here)*
-
