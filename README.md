@@ -1,5 +1,14 @@
 # Calorie Scan
 
+![HTML5](https://img.shields.io/badge/HTML5-orange)
+![CSS3](https://img.shields.io/badge/CSS3-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
+![Node.js](https://img.shields.io/badge/Node.js-green)
+![Express](https://img.shields.io/badge/Express.js-black)
+![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen)
+![QR-Scanner](https://img.shields.io/badge/QR--Scanner-gray)
+
+
 ## Introduction
 A full-stack web app that lets users scan food dish QR codes, view nutritional details, and calculate total calories in real time.  
 Built with **HTML, CSS, JavaScript, Node.js, Express, and MongoDB** — this project combines frontend interactivity with backend CRUD APIs for managing dishes and calorie data.
